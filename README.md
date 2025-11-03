@@ -1,2 +1,3 @@
-# jpmc-project-template
-Template for the creation of JPMC project repositories - IN DEVELOPMENT
+# Global Technology Applied Research
+
+This repository contains code released by [Global Technology Applied Research](https://www.jpmorganchase.com/about/technology/research/applied-research) 
