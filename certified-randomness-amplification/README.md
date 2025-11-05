@@ -1,3 +1,5 @@
+# Code for *Certified randomness amplification by dynamically probing remote random quantum states*
+
 This repository contains the code to reproduce figures in the paper *Certified randomness amplification by dynamically probing remote random quantum states*.
 
 For the main text:
