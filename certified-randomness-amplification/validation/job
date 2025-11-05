@@ -1,0 +1,16 @@
+#!/bin/bash -l
+#PBS -N certify
+#PBS -l select=4096
+#PBS -l place=scatter
+#PBS -l walltime=1:00:00
+#PBS -l filesystems=flare
+#PBS -q prod
+#PBS -A CertRandomness
+
+
+NNODES=`wc -l < $PBS_NODEFILE`
+NRANKS=14 # Number of MPI ranks to spawn per node
+NTOTRANKS=$(( NNODES * NRANKS ))
+export MKL_BLAS_COMPUTE_MODE=FLOAT_TO_BF16X2
+mpiexec -n ${NTOTRANKS} -ppn ${NRANKS} --cpu-bind=list:0-1:8-9:2-7:10-15:16-23:24-31:32-39:40-47:52-59:60-67:68-75:76-83:84-91:92-99 ./affinity.sh
+

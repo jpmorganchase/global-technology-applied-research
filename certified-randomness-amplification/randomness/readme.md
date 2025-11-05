@@ -1,0 +1,3 @@
+The raw random bits used in the experiments are provided. If you want to generate them again, run `rdseed_rand_gen.py` and you need to have a device with RDRAND and install rdrand for python.
+The various stages of randomness extraction can be run by executing `extraction_for_experiment.py` by setting appropriate variables.
+To get the randomness used for the measurement bases, run `get_basis_randomness.py`.

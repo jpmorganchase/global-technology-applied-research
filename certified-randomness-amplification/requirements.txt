@@ -1,0 +1,10 @@
+cotengra>=0.7.0
+quimb>=1.10.0
+kahypar>=1.3.5
+tqdm>=4.67.1
+numpy<2.0.0 # Above 2.0.0 does not work with nevergrad, but nevergrad is not required. You can choose to run nevergrad for cotengra in which case numpy must be older than 2.0.0.
+matplotlib>=3.6.0
+scipy>=1.15.3
+ipykernel>=6.10.0
+pytket>=2.9.3
+stim>=1.15.0
